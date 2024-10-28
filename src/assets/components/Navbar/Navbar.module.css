@@ -1,0 +1,61 @@
+:root{
+    --primary-color: #03588C;
+    --secondary-color: #0378A6;
+    --blue-light-color: #025373;
+    --navbar-color: #0E6E9E;
+    --white-color: #fff;
+  }
+  
+
+
+.containerNavbar{
+    width: 100%;
+    padding: 1.4em;
+    display: flex;
+    background: var(--navbar-color);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0.2rem 0.05rem 0.05em rgb(234, 234, 234);
+}
+
+.imageNavbar{
+    padding: 0.4em;
+}
+
+.imageNavbar img{
+    max-width: 150px;
+}
+
+.itemNavbar{
+    display:  flex;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.itemNavbar ul > a {
+    transition: 0.2s all ease-in;
+    color: var(--white-color);
+}
+
+.itemNavbar a:hover{
+    transition: 0.2s all ease-in;
+    color: rgb(230, 230, 230);
+}
+
+
+.buttonNavbar{
+    padding: 1em;
+    border: none;
+    background: var(--white-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    box-shadow: 0.1em 0.1em 0.2em #68686844;
+    border-radius: 0.6em;
+    transition: 0.4s all ease-in;
+}
+
+.buttonNavbar:hover{
+    transition: 0.4s all ease-in;
+    opacity: 80%;
+}
