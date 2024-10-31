@@ -11,13 +11,13 @@ export const NavbarComponent = () => {
     return (
         <nav className={`flex items-center justify-between p-4 bg-gray-800 text-white`}>
             <div className="w-2/12 md:w-3/12">
+                <a href="/"></a>
                 <img src={RuelaLogo} alt="Ruela Logo" className="max-w-[150px]" />
             </div>
             <div className="hidden md:flex gap-10 p-4">
-                <ul><a href="#" className='hover:text-yellow-400'>Home</a></ul>
-                <ul><a href="#" className='hover:text-yellow-400'>Sobre</a></ul>
-                <ul><a href="#" className='hover:text-yellow-400'>Benefícios</a></ul>
-                <ul><a href="#" className='hover:text-yellow-400'>Contato</a></ul>
+                <ul><a href="/" className='hover:text-yellow-400'>Home</a></ul>
+                <ul><a href="#about" className='hover:text-yellow-400'>Sobre</a></ul>
+                <ul><a href="#plus" className='hover:text-yellow-400'>Benefícios</a></ul>
             </div>
 
             <div className="md:hidden">
@@ -31,7 +31,6 @@ export const NavbarComponent = () => {
                         <li><a href="#" className='hover:text-yellow-400'>Home</a></li>
                         <li><a href="#" className='hover:text-yellow-400'>Sobre</a></li>
                         <li><a href="#" className='hover:text-yellow-400'>Benefícios</a></li>
-                        <li><a href="#" className='hover:text-yellow-400'>Contato</a></li>
                     </ul>
                 </div>
             )}

@@ -1,23 +1,24 @@
-import { AboutPage } from './components/About/About'
-import { FAQSection } from './components/FAQ/Questions'
-import Footer from './components/Footer/Footer'
-import { NavbarComponent } from './components/Navbar/Navbar'
-import { BenefitsSection } from './components/plus/Plus'
-import { ResourcesSection } from './components/plus/Resources'
-import { ProductPage } from './components/ProductPage/ProductPage'
+import Footer from './components/Footer/Footer';
+import { NavbarComponent } from './components/Navbar/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HomePage } from './Pages/HomePage';
+import { TermsOfUse } from './Pages/Terms';
+import { PrivacyPolicy } from './Pages/Politics';
 
 function App() {
   return (
     <>
       <NavbarComponent />
-      <ProductPage />
-      <AboutPage />
-      <BenefitsSection />
-      <ResourcesSection />
-      <FAQSection />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/termos" element={<TermsOfUse />} />
+          <Route path="/politicas" element={<PrivacyPolicy />} />
+        </Routes>
+      </Router>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

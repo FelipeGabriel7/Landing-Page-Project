@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaBookOpen, FaHistory, FaCode, FaRegEye, FaBriefcase, FaQuestionCircle } from 'react-icons/fa';
 
 const benefits = [
@@ -36,7 +36,7 @@ const benefits = [
 
 export const BenefitsSection = () => {
     return (
-        <div className="p-10 bg-stone-50">
+        <div className="p-10 bg-stone-50" id="plus">
             <h2 className="text-4xl font-bold text-center mb-8">Benefícios do Rhuela Queries</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {benefits.map((benefit, index) => (

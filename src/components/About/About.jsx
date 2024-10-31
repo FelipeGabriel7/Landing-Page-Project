@@ -3,7 +3,7 @@ import imgApp from '../../assets/praticar_rhuela_queries.jpg'
 export const AboutPage = () => {
     return (
         <>
-            <div className='flex justify-between w-full items-center'>
+            <div className='flex justify-between w-full items-center' id="about">
                 <div className='w-[50%]'>
                     <img src={imgApp} className='w-full' />
                 </div>
@@ -25,13 +25,10 @@ export const AboutPage = () => {
                             <li className="text-lg"> <b> Projeto Educacional: </b> O Rhuela Queries não é apenas um app; é uma iniciativa que visa democratizar o acesso ao conhecimento sobre bancos de dados. Com uma missão de capacitar alunos e profissionais de tecnologia, nosso projeto é acessível a todos, independentemente do nível de experiência.</li>
                         </ul>
                     </div>
-
                     <div className="flex flex-col gap-2 w-10/12">
                         <p className="text-xl text-medium"> Descubra o Rhuela Queries e comece sua jornada no mundo do SQL de forma divertida e eficaz!</p>
                     </div>
                 </div>
-
-
             </div>
         </>
     )
