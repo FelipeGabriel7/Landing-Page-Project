@@ -8,15 +8,17 @@ import { PrivacyPolicy } from './Pages/Politics';
 function App() {
   return (
     <>
-      <NavbarComponent />
+
       <Router>
+        <NavbarComponent />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/termos" element={<TermsOfUse />} />
           <Route path="/politicas" element={<PrivacyPolicy />} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
+
     </>
   );
 }

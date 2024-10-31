@@ -1,4 +1,5 @@
 import { FaArrowUp } from 'react-icons/fa';
+import { LiaLinkedinIn } from 'react-icons/lia';
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
@@ -18,9 +19,9 @@ export const Footer = () => {
             <div className="flex justify-between items-center mb-4">
                 <div className="flex space-x-4">
                     {links.map((link, index) => (
-                        <a key={index} href={link.path} className="hover:text-amber-400 transition-colors">
+                        <Link key={index} to={link.path} className="hover:text-amber-400 transition-colors">
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
                 <button
@@ -31,9 +32,9 @@ export const Footer = () => {
                 </button>
             </div>
             <div className="text-center">
-                <a href="/termos" className="hover:text-blue-400 transition-colors mx-2">Termos de Uso</a>
+                <Link to="/termos" className="hover:text-blue-400 transition-colors mx-2">Termos de Uso</Link>
                 <span>|</span>
-                <a href="/politicas" className="hover:text-blue-400 transition-colors mx-2">Política de Privacidade</a>
+                <Link to="/politicas" className="hover:text-blue-400 transition-colors mx-2">Política de Privacidade</Link>
             </div>
             <div className="text-center mt-4 text-sm">
                 © {new Date().getFullYear()} Rhuela Queries. Todos os direitos reservados.
