@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    box-shadow: 0.2rem 0.05rem 0.05em rgb(234, 234, 234);
+    box-shadow: 0.01rem 0.01rem 0.01em 0.05rem rgba(30, 30, 30, 0.667);
 }
 
 .imageNavbar{
@@ -58,4 +58,19 @@
 .buttonNavbar:hover{
     transition: 0.4s all ease-in;
     opacity: 80%;
+}
+
+
+@media (max-width: 768px){
+
+    .containerNavbar{
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.6rem;
+        align-items: center;
+    }
+
+    .buttonNavbar {
+        display: none;
+    }
 }
