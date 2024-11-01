@@ -16,7 +16,7 @@ export const NavbarComponent = () => {
                 <img src={RuelaLogo} alt="Ruela Logo" className="max-w-[150px]" />
             </div>
             <div className="hidden md:flex gap-10 p-4 text-xl">
-                <ul><Link href="/" className='hover:text-yellow-400'>Home</Link></ul>
+                <ul><a href="/" className='hover:text-yellow-400'>Home</a></ul>
                 <ul><a href="#about" className='hover:text-yellow-400'>Sobre</a></ul>
                 <ul><a href="#plus" className='hover:text-yellow-400'>Benefícios</a></ul>
             </div>
@@ -29,7 +29,7 @@ export const NavbarComponent = () => {
             {isOpen && (
                 <div className="absolute top-24 left-0 w-full flex justify-start items-start bg-gray-800 text-white md:hidden">
                     <ul className="flex flex-col items-start p-8 gap-8">
-                        <li><Link href="/" className='hover:text-yellow-400'>Home</Link></li>
+                        <li><a href="/" className='hover:text-yellow-400'>Home</a></li>
                         <li><a href="#about" className='hover:text-yellow-400'>Sobre</a></li>
                         <li><a href="#plus" className='hover:text-yellow-400'>Benefícios</a></li>
                     </ul>
