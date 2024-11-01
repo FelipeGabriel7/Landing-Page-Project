@@ -9,7 +9,7 @@ export const AboutPage = () => {
                 initial="hidden"
                 viewport={{ once: false }}
                 whileInView={"show"} className='flex justify-between w-full items-center' id="about">
-                <div className='w-[50%]'>
+                <div className='w-[100%]'>
                     <img src={imgApp} className='w-full lg:flex hidden' />
                 </div>
                 <div className="flex flex-col gap-10  justify-center items-start p-6 lg:p-12">
