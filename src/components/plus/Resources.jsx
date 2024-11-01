@@ -1,4 +1,6 @@
 import { FaBookOpen, FaBriefcase, FaQuestionCircle, FaRegEye } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils";
 
 export const ResourcesSection = () => {
     const resources = [
@@ -25,15 +27,18 @@ export const ResourcesSection = () => {
     ];
 
     return (
-        <div className="p-20 bg-white">
+        <motion.div variants={fadeIn("right", 0.025)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false }} className="p-20 bg-white">
             <h2 className="text-3xl font-bold text-center mb-6">Recursos do App</h2>
             <div className="space-y-6">
                 {resources.map((resource, index) => (
                     <div
                         key={index}
-                        className="flex items-start p-4 border-b border-gray-300 transition-transform transform hover:scale-105 hover:bg-gray-100"
+                        className="flex items-start p-4 gap-2 border-b border-gray-300 transition-transform transform hover:scale-105 hover:bg-gray-100"
                     >
-                        {resource.icon}
+                        <span className="text-md lg:text-sm"> {resource.icon} </span>
                         <div>
                             <h3 className="text-xl font-semibold">{resource.title}</h3>
                             <p className="text-gray-700">{resource.description}</p>
@@ -41,6 +46,6 @@ export const ResourcesSection = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 };

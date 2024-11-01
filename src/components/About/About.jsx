@@ -1,13 +1,18 @@
 import imgApp from '../../assets/praticar_rhuela_queries.jpg'
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../utils'
 
 export const AboutPage = () => {
     return (
         <>
-            <div className='flex justify-between w-full items-center' id="about">
+            <motion.div variants={fadeIn("up", 0.02)}
+                initial="hidden"
+                viewport={{ once: false }}
+                whileInView={"show"} className='flex justify-between w-full items-center' id="about">
                 <div className='w-[50%]'>
-                    <img src={imgApp} className='w-full' />
+                    <img src={imgApp} className='w-full lg:flex hidden' />
                 </div>
-                <div className="flex flex-col gap-10  justify-center items-start p-12">
+                <div className="flex flex-col gap-10  justify-center items-start p-6 lg:p-12">
                     <h1 className="text-3xl text-gray-600"> Sobre o App</h1>
                     <div className="flex flex-col gap-2 w-10/12">
                         <h2 className="text-2xl font-medium"> O que é o Rhuela Queries? </h2>
@@ -29,7 +34,7 @@ export const AboutPage = () => {
                         <p className="text-xl text-medium"> Descubra o Rhuela Queries e comece sua jornada no mundo do SQL de forma divertida e eficaz!</p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     )
 }

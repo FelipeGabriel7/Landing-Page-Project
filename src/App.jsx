@@ -5,10 +5,10 @@ import { HomePage } from './Pages/HomePage';
 import { TermsOfUse } from './Pages/Terms';
 import { PrivacyPolicy } from './Pages/Politics';
 
+
 function App() {
   return (
     <>
-
       <Router>
         <NavbarComponent />
         <Routes>
@@ -18,7 +18,6 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-
     </>
   );
 }

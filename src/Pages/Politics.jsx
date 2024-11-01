@@ -1,9 +1,9 @@
 export const PrivacyPolicy = () => {
     return (
-        <div className="p-10 bg-gray-50">
-            <h2 className="text-3xl font-bold text-center mb-6">Políticas de Privacidade</h2>
+        <div className="max-w-5xl mx-auto mt-10 mb-10 bg-white rounded-lg shadow-lg p-32">
+            <h2 className="text-3xl font-bold text-start mb-6">Políticas de Privacidade</h2>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-gray-800">Tipos de Dados Coletados</h3>
                 <p className="text-gray-700">
                     Este aplicativo não coleta dados pessoais sensíveis. O único dado solicitado é o nome do usuário, que é opcional e pode ser fornecido somente se o usuário desejar. Não há coleta de informações relacionadas à câmera, localização, ou outros dados pessoais. O aplicativo também não utiliza ferramentas de rastreamento.

@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { FaQuestionCircle } from 'react-icons/fa';
+import { RiQuestionAnswerFill } from "react-icons/ri";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../utils';
 
 export const FAQSection = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -36,7 +39,12 @@ export const FAQSection = () => {
     };
 
     return (
-        <div className="p-10 bg-stone-50">
+        <motion.div
+            variants={fadeIn("up", 0.025)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false }}
+            className="p-10 bg-stone-50">
             <h2 className="text-3xl font-bold text-center mb-8">Perguntas Frequentes (FAQ)</h2>
             <div className="max-w-3xl mx-auto">
                 {faqs.map((faq, index) => (
@@ -46,7 +54,7 @@ export const FAQSection = () => {
                             onClick={() => toggleFAQ(index)}
                         >
                             <h3 className="text-xl font-semibold flex items-center">
-                                <FaQuestionCircle className="text-gray-800 mr-2 transition-transform hover:scale-110" />
+                                <RiQuestionAnswerFill className="text-gray-600 mr-2 transition-transform hover:scale-110" />
                                 {faq.question}
                             </h3>
                             <span>{openIndex === index ? '-' : '+'}</span>
@@ -57,6 +65,6 @@ export const FAQSection = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     );
 };
