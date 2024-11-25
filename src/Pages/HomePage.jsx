@@ -3,8 +3,7 @@ import { FAQSection } from '../components/FAQ/Questions'
 import { BenefitsSection } from '../components/plus/Plus'
 import { ResourcesSection } from '../components/plus/Resources'
 import { ProductPage } from '../components/ProductPage/ProductPage'
-import { motion } from 'framer-motion'
-import { fadeIn } from '../utils'
+
 
 export const HomePage = () => {
     return (

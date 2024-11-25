@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/termos" element={<TermsOfUse />} />
-          <Route path="/politicas" element={<PrivacyPolicy />} />
+          <Route path="/politicas" element={<PrivacyPolicy />} exact />
         </Routes>
         <Footer />
       </Router>

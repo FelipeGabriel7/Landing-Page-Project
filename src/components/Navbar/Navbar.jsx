@@ -16,7 +16,7 @@ export const NavbarComponent = () => {
                 <img src={RuelaLogo} alt="Ruela Logo" className="max-w-[150px]" />
             </div>
             <div className="hidden md:flex gap-10 p-4 text-xl">
-                <ul><a href="/" className='hover:text-yellow-400'>Home</a></ul>
+                <ul><Link to="/" className='hover:text-yellow-400'>Home</Link></ul>
                 <ul><a href="#about" className='hover:text-yellow-400'>Sobre</a></ul>
                 <ul><a href="#plus" className='hover:text-yellow-400'>Benefícios</a></ul>
             </div>
